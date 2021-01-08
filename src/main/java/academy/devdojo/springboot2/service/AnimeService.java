@@ -1,30 +1,15 @@
 package academy.devdojo.springboot2.service;
 
 import academy.devdojo.springboot2.domain.Anime;
-<<<<<<< HEAD
-//<<<<<<< HEAD
-import academy.devdojo.springboot2.mapper.AnimeMapper;
-//=======
 import academy.devdojo.springboot2.exception.BadRequestException;
-//>>>>>>> class17
-=======
-//<<<<<<< class17
-import academy.devdojo.springboot2.exception.BadRequestException;
-//=======
 import academy.devdojo.springboot2.mapper.AnimeMapper;
-//>>>>>>> main
->>>>>>> 51592029e6f679fd202b23745f234939809f86ce
 import academy.devdojo.springboot2.repository.AnimeRepository;
 import academy.devdojo.springboot2.request.AnimePostRequestBody;
 import academy.devdojo.springboot2.request.AnimePutRequestBody;
 import lombok.RequiredArgsConstructor;
-import org.springframework.http.HttpStatus;
 import org.springframework.stereotype.Service;
-import org.springframework.web.server.ResponseStatusException;
 
-import java.util.ArrayList;
 import java.util.List;
-import java.util.concurrent.ThreadLocalRandom;
 
 /*
 Essa é a classe responsável pelas regras de negócio
@@ -53,7 +38,7 @@ public class AnimeService {
     }
 
     public Anime save(AnimePostRequestBody animePostRequestBody) {
-       return  animeRepository.save(AnimeMapper.INSTANCE.toAnime(animePostRequestBody));
+        return animeRepository.save(AnimeMapper.INSTANCE.toAnime(animePostRequestBody));
     }
 
     public void delete(long id) {
