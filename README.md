@@ -22,4 +22,5 @@
 * spring-boot-starter-web
 * spring-boot-devtools
 * mysql-connector-java
+* lombok
 
