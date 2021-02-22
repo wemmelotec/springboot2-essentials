@@ -7,7 +7,7 @@
 * IDE - IntelliJ Comunity
 * SpringBoot
 * Mysql
-* 
+* Docker
 * Git e GitHub
 * Postman
 
