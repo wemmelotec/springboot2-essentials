@@ -15,7 +15,7 @@ import javax.persistence.Id;
 @AllArgsConstructor //para gerar um construtor com todos esse valores
 @NoArgsConstructor
 @Entity
-@Builder
+@Builder//para poder utilizar o builder em outras classes
 public class Anime {
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)

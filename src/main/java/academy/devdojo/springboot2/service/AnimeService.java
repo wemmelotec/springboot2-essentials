@@ -15,7 +15,7 @@ import java.util.List;
 Essa é a classe responsável pelas regras de negócio
  */
 @Service//torna a classe um spring been
-@RequiredArgsConstructor
+@RequiredArgsConstructor//para o spring fazer a injeção de dependência do animeRepository
 public class AnimeService {
     /*private static List<Anime> animes;
     static {
