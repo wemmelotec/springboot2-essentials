@@ -8,6 +8,7 @@
 * SpringBoot
 * Mysql
 * Docker
+* Hibernate para criar as tabelas no banco.
 * Git e GitHub
 * Postman
 
