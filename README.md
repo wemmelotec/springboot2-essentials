@@ -24,4 +24,5 @@
 * spring-boot-devtools
 * mysql-connector-java
 * lombok
+* mapstruct
 
