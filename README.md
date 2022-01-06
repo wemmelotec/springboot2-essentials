@@ -17,6 +17,9 @@
 - [x] Criar o delete.
 - [x] Classes DTO
 - [x] Mapeamento de classes
+- [x] Listagem de objetos
+- [x] Pesquisa por atributo @PathVariable 
+- [x] Pesquisa por atributo @RequestParam e JPA(JPQL)
 
 ## Dependências do projeto
 * spring-boot-starter-data-jpa
