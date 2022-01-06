@@ -6,9 +6,7 @@
 * Java 11
 * IDE - IntelliJ Comunity
 * SpringBoot
-* Mysql
-* Docker
-* Hibernate para criar as tabelas no banco.
+* H2
 * Git e GitHub
 * Postman
 
@@ -22,7 +20,8 @@
 * spring-boot-starter-data-jpa
 * spring-boot-starter-web
 * spring-boot-devtools
-* mysql-connector-java
-* lombok
-* mapstruct
+* spring-boot-starter-test
+* com.h2database
+* org.projectlombok
+* org.mapstruct
 
