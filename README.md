@@ -11,10 +11,12 @@
 * Postman
 
 ## TaksLists
-- [ ] Criar a retrieve.
-- [ ] Criar o create.
-- [ ] Criar o update.
-- [ ] Criar o delete.
+- [x] Criar a retrieve.
+- [x] Criar o create.
+- [x] Criar o update.
+- [x] Criar o delete.
+- [x] Classes DTO
+- [x] Mapeamento de classes
 
 ## Dependências do projeto
 * spring-boot-starter-data-jpa
