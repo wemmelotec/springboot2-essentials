@@ -18,7 +18,8 @@
 - [x] Pesquisa por atributo @PathVariable 
 - [x] Pesquisa por atributo @RequestParam e JPA(JPQL)
 - [x] Listagem de objetos ordenada JPA(@Query personalizada JPQL)
-- [x] Exceção personalizada BadRequestException
+- [x] Exceção personalizada BadRequestException com detalhes BadRequestExceptionDetails
+- [x] Exceção global RestExceptionHandler
 
 ## Dependências do projeto
 * spring-boot-starter-data-jpa
