@@ -29,7 +29,7 @@ public class AnimeService {
     }
 
     public List<Anime> findByName(String name) {
-        return animeRepository.findByName(name);
+        return animeRepository.findByNameIgnoreCase(name);
     }
 
     public Anime findByIdOrThrowBadRequestException(long id) {
