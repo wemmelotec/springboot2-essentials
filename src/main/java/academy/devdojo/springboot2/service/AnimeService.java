@@ -28,13 +28,19 @@ public class AnimeService {
         return animeRepository.findAll();
     }
 
+    public List<Anime> listAllOrderByName() {
+        return animeRepository.findByNameOrder();
+    }
+
     public List<Anime> findByName(String name) {
         return animeRepository.findByNameIgnoreCase(name);
     }
 
     public Anime findByIdOrThrowBadRequestException(long id) {
         return animeRepository.findById(id)
+                                    // Exceção personalizada
                 .orElseThrow(() -> new BadRequestException("Anime not found"));
+                                    // ResponseStatusException(HttpStatus.BAD_REQUEST, "Anime not found"));
     }
 
     public Anime save(AnimePostRequestBody animePostRequestBody) {

@@ -32,6 +32,11 @@ public class AnimeController {
         //log.info(dateUtil.formatLocalDateTimeToDatebaseStyle(LocalDateTime.now()));
         return ResponseEntity.ok(animeService.listAll());
     }
+    @GetMapping(path = "/order")
+    public ResponseEntity<List<Anime>> listOrderByName(){
+        //log.info(dateUtil.formatLocalDateTimeToDatebaseStyle(LocalDateTime.now()));
+        return ResponseEntity.ok(animeService.listAllOrderByName());
+    }
 
     @GetMapping(path = "/{id}")
     public ResponseEntity<Anime> findById(@PathVariable long id){
