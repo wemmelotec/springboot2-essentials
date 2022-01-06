@@ -8,16 +8,18 @@ import org.springframework.web.bind.annotation.ControllerAdvice;
 import org.springframework.web.bind.annotation.ExceptionHandler;
 
 import java.time.LocalDateTime;
+//eu posso ter diversos tipos de exceção nesta classe
 
-@ControllerAdvice
+@ControllerAdvice //informa ao controller a respeito das exceções que estiverem aqui
 public class RestExceptionHandler {
+    //caso eu tenha uma exceção desse tipo BadRequestException, o controller deve retornar o método abaixo BadRequestExceptionDetails
     @ExceptionHandler(BadRequestException.class)
     public ResponseEntity<BadRequestExceptionDetails> handlerBadRequestException(BadRequestException badRequestException){
         return new ResponseEntity<>(
-                BadRequestExceptionDetails.builder()
+                BadRequestExceptionDetails.builder() //instanciei o objeto com o builder
                     .timestamp(LocalDateTime.now())
                         .status(HttpStatus.BAD_REQUEST.value())
-                        .title("Bad Request Exception")
+                        .title("Bad Request Exception, check the documentation")
                         .details(badRequestException.getMessage())
                         .developerMessage(badRequestException.getClass().getName())
                         .build(), HttpStatus.BAD_REQUEST);
