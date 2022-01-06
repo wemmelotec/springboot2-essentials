@@ -5,16 +5,14 @@ import lombok.Builder;
 import lombok.Data;
 import lombok.NoArgsConstructor;
 
-import javax.persistence.Entity;
-import javax.persistence.GeneratedValue;
-import javax.persistence.GenerationType;
-import javax.persistence.Id;
+import javax.persistence.*;
 
 //por estar utilizando o lombok eu não preciso criar get e setters, equals, hashcode, to string basta anotar a classe com o Date
 @Data
 @AllArgsConstructor //para gerar um construtor com todos esse valores
 @NoArgsConstructor
 @Entity
+@Table(name = "tb_anime")
 @Builder//para poder utilizar o builder em outras classes
 public class Anime {
     @Id
