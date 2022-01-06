@@ -11,10 +11,7 @@
 * Postman
 
 ## TaksLists
-- [x] Criar a retrieve.
-- [x] Criar o create.
-- [x] Criar o update.
-- [x] Criar o delete.
+- [x] CRUD (create, retrieve, update, delete).
 - [x] Classes DTO
 - [x] Mapeamento de classes
 - [x] Listagem de objetos
