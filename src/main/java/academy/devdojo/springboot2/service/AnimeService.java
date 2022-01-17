@@ -8,6 +8,7 @@ import academy.devdojo.springboot2.request.AnimePostRequestBody;
 import academy.devdojo.springboot2.request.AnimePutRequestBody;
 import lombok.RequiredArgsConstructor;
 import org.springframework.stereotype.Service;
+import org.springframework.transaction.annotation.Transactional;
 
 import java.util.List;
 
@@ -42,7 +43,8 @@ public class AnimeService {
                 .orElseThrow(() -> new BadRequestException("Anime not found"));
                                     // ResponseStatusException(HttpStatus.BAD_REQUEST, "Anime not found"));
     }
-
+    //essa notação serve para garantir que só salvará no banco quando o método finalizar
+    @Transactional
     public Anime save(AnimePostRequestBody animePostRequestBody) {
         return animeRepository.save(AnimeMapper.INSTANCE.toAnime(animePostRequestBody));
     }
