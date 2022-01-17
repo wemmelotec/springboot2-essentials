@@ -3,7 +3,7 @@ package academy.devdojo.springboot2.request;
 import lombok.Data;
 
 import javax.validation.constraints.NotEmpty;
-import javax.validation.constraints.NotNull;
+
 
 //essa é uma classe DTO
 //Esse post não precisa enviar o ID da entidade, por isso apenas a String
