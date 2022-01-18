@@ -20,6 +20,7 @@
 - [x] Listagem de objetos ordenada JPA(@Query personalizada JPQL)
 - [x] Exceção personalizada BadRequestException com detalhes BadRequestExceptionDetails
 - [x] Exceção global RestExceptionHandler
+- [x] Validação de campos
 
 ## Dependências do projeto
 * spring-boot-starter-data-jpa
@@ -29,4 +30,5 @@
 * com.h2database
 * org.projectlombok
 * org.mapstruct
+* spring-boot-starter-validation
 
