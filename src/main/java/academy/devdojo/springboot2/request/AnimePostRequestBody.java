@@ -13,4 +13,7 @@ public class AnimePostRequestBody {
     //preiso também indicar no controller que eu quero que o @RequestBody seja validado
     @NotEmpty(message = "The anime name cannot be empty")
     private String name;
+    //coloquei apenas para testar a mensagem de erro no postman
+//    @NotEmpty
+//    private String url;
 }
