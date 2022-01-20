@@ -7,3 +7,4 @@ INSERT INTO tb_anime (name) VALUES ('Raj');
 INSERT INTO tb_anime (name) VALUES ('Penny');
 INSERT INTO tb_anime (name) VALUES ('Stuart');
 INSERT INTO tb_anime (name) VALUES ('Amy');
+INSERT INTO tb_anime (name) VALUES ('wellington');
